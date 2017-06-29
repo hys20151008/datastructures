@@ -13,8 +13,9 @@ void insertSort(int a[], int n){
 int main(){
 	int a[] ={4,5,6,3,1,2,9,0};
 	int i=0;
-	insertSort(a,8);
-	for(i=0;i<8;i++){
+	int N = sizeof(a)/sizeof(a[0]);
+	insertSort(a,N);
+	for(i=0;i<N;i++){
 		printf("%d\n", a[i]);
 	}
 	return 0;
